@@ -16,20 +16,20 @@ The Elves take turns writing down the number of Calories contained by the variou
 
 For example, suppose the Elves finish writing their items' Calories and end up with the following list:
 
-1000
-2000
-3000
-
-4000
-
-5000
-6000
-
-7000
-8000
-9000
-
-10000
+    1000
+    2000
+    3000
+    
+    4000
+    
+    5000
+    6000
+    
+    7000
+    8000
+    9000
+    
+    10000
 
 This list represents the Calories of the food carried by five Elves:
 
@@ -43,7 +43,7 @@ In case the Elves get hungry and need extra snacks, they need to know which Elf 
 
 Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?
 
-Your puzzle answer was 70720.
+My puzzle answer was 70720.
 
 ### --- Part Two ---
 
@@ -55,4 +55,4 @@ In the example above, the top three Elves are the fourth Elf (with 24000 Calorie
 
 Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total?
 
-Your puzzle answer was 207148.
+My puzzle answer was 207148.
