@@ -14,6 +14,7 @@ The second column says how the round needs to end:
 - Y means you need to end the round in a draw
 - Z means you need to win.
 */
+// // Returns what you should pick against the opponent to get the desired outcome
 func strategy(OPPONENT, DESIRED_OUTCOME byte) byte {
 	BEAT := make(map[byte]byte)
 	BEAT['A'] = 'Y'
@@ -56,7 +57,8 @@ Points per match:
 3 for tie
 6 for win
 */
-func mactch(OPPONENT, YOU byte) int {
+// Returns the score for a match
+func match(OPPONENT, YOU byte) int {
 	switch {
 	case OPPONENT == 'A' && YOU == 'X':
 		return 1 + 3
@@ -98,7 +100,7 @@ func main() {
 			OPPONENT := line[0]
 			DESIRED_OUTCOME := line[2]
 			YOU := strategy(OPPONENT, DESIRED_OUTCOME)
-			SCORE += mactch(OPPONENT, YOU)
+			SCORE += match(OPPONENT, YOU)
 		}
 	}
 
